@@ -45,6 +45,6 @@
 
   Agora dentro do arquivo main.jsx, remova a importação do index.css.
   Agora dentro do index.html remova a linha que utiliza os icones(svgs) deletados anteriormente.
-  Apague todo o código do arquivo App.jsx.
+  Apague também o arquivo App.jsx.
 
 Tudo Pronto!
