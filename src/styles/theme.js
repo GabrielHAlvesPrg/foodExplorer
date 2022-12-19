@@ -9,6 +9,7 @@ export default {
 
     WHITE: "#FFFFFF",
 
+    LABEL: "#C4C4CC",
     GRAY_400: "#7C7C8A",
     GRAY_300: "#D9D9D9",
 
