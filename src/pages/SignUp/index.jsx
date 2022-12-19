@@ -5,7 +5,7 @@ import logoImg from '../../assets/Polygon.svg'
 import { Button } from '../../components/Button'
 import { Input } from '../../components/Input'
 
-export function SignIn(){
+export function SignUp(){
   return (
     <Container>    
       <img src={logoImg} alt="Logo" />  
@@ -13,7 +13,15 @@ export function SignIn(){
     
     <Main>
       <div className="content">
-        <h1>Faça login</h1>
+        <h1>Crie sua conta</h1>
+
+        <div className="input">
+          <label className="label">Seu nome</label>
+          <Input
+            placeholder="Exemplo: Maria da Silva"
+            type="text"
+          />
+        </div>
 
         <div className="input">
           <label className="label">Email</label>
@@ -32,10 +40,10 @@ export function SignIn(){
         </div>
          
         <Button
-          title={"Entrar"}
+          title={"Criar conta"}
         />   
 
-        <a href="">Crie uma conta</a>       
+        <a href="">Já tenho uma conta</a>       
 
       </div>
     </Main>
