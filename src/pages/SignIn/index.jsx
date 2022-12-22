@@ -8,7 +8,7 @@ import { Input } from '../../components/Input'
 export function SignIn(){
   return (
     <Container>    
-      <img src={logoImg} alt="Logo" />  
+      <img src={logoImg} alt="Logotipo" />  
       <h1>food explorer</h1>
     
     <Main>

@@ -49,7 +49,8 @@ export const Main = styled.main`
 
   input {
     width: 100%;
-    
+    //border:solid 1px ${({ theme }) => theme.COLORS.WHITE};
+    //border-radius: 0.5rem;
   }
 
   h1 {
