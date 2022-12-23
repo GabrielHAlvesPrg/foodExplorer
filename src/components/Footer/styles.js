@@ -4,8 +4,8 @@ export const Container = styled.div`
   width: 100%;
   height: 7.7rem;
 
-  position: absolute;
-  bottom: 0;
+  //position: absolute;
+  //bottom: 0;
 
   padding: 2.3rem;
 

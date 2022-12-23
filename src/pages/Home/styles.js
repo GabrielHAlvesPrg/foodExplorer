@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+ 
+
 `;
 
 export const Banner = styled.div`
@@ -53,5 +55,15 @@ export const Main = styled.div`
     font-size: 3.2rem;
 
     margin-bottom: 3.9rem;
+
+    color: ${({theme}) => theme.COLORS.GRAY_400};
+  }
+
+  .pratosPrincipais {
+    display: flex;
+
+    gap: 2.7rem;
+
+    max-width: 112.0rem;
   }
 `;

@@ -4,6 +4,9 @@ import bannerImg from '../../assets/bannerHome.svg';
 
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
+import { Menu } from '../../components/Menu'
+
+import saladaRavanellaImg from '../../assets/saladaRavanella.svg'
 
 export function Home(){
   return (
@@ -20,8 +23,28 @@ export function Home(){
       </Banner>
 
       <Main>
+        
         <h1>Pratos principais</h1>
 
+        <div className="pratosPrincipais">
+          <Menu
+            img={saladaRavanellaImg}
+            title="Salada Ravanella"
+            description="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
+            price="49,97"
+          />
+
+          <Menu
+            img={saladaRavanellaImg}
+            title="Salada Ravanella"
+            description="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
+            price="49,97"
+          />
+
+
+        </div>
+
+        
       </Main>
 
       <Footer/>
