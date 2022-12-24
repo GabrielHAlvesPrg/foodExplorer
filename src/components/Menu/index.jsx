@@ -1,6 +1,8 @@
 import { Container, Main } from './styles';
 
 import { AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlinePlus } from 'react-icons/ai';
+
 
 import heartImg from '../../assets/heart.svg';
 import heartSelectedImg from '../../assets/heartSelected.svg';
@@ -34,8 +36,12 @@ export function Menu({ img, title, description, price, ...rest}){
           </button>
           <p> 01 </p>
           <button id='increment'>
-          <img src={additionImg} alt="botão para adicionar uma unidade do prato, do carrinho de compras" />
+           
+           <AiOutlinePlus
+            color='white'
+           />
           </button>
+          
 
           <Button
             id='incluir'

@@ -1,8 +1,12 @@
 import { Container } from './styles'
 
-export function Input({icon: Icon, ...rest}){
+export function Input({border = false, icon: Icon, ...rest}){
   return(
-    <Container>
+    <Container
+      border={
+        border
+      }
+    >
       {Icon && <Icon size={20}/>}
       <input {...rest} />
     </Container>

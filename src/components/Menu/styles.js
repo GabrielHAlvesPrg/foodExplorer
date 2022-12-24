@@ -104,6 +104,12 @@ export const Main = styled.div`
     #incluir {
       margin-left: 1.9rem;
     }
+
+    .gradd{
+      width: 1.8rem;
+      height: 1.8rem;
+      color: red;
+    }
   }
 
 `;

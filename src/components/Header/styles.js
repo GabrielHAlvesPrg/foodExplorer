@@ -40,6 +40,8 @@ export const Main = styled.div`
   .search {
     width: 34.4rem;
     height: 1.6rem;
+
+    border: none;
   }
 
   > button {

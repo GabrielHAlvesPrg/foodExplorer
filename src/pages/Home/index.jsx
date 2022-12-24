@@ -7,6 +7,7 @@ import { Footer } from '../../components/Footer';
 import { Menu } from '../../components/Menu'
 
 import saladaRavanellaImg from '../../assets/saladaRavanella.svg'
+import torradasDeParmaImg from '../../assets/torradasDeParma.svg'
 
 export function Home(){
   return (
@@ -35,10 +36,10 @@ export function Home(){
           />
 
           <Menu
-            img={saladaRavanellaImg}
-            title="Salada Ravanella"
-            description="Rabanetes, folhas verdes e molho agridoce salpicados com gergelim"
-            price="49,97"
+            img={torradasDeParmaImg}
+            title="Torradas de Parma"
+            description="Presunto de parma e rúcula em um pão com fermentação natural"
+            price="25,97"
           />
 
 

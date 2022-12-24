@@ -7,13 +7,15 @@ export const Container = styled.div`
 
   height: 5.0rem;
 
- border:solid 1px ${({ theme }) => theme.COLORS.WHITE};
+  border: ${props => props.border ? `solid 1px ${props.theme.COLORS.WHITE}` : "none"};
+  //border:solid 1px ${({ theme }) => theme.COLORS.WHITE};
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
   color: ${({ theme }) => theme.COLORS.GRAY_400};
 
   margin-top: 0.5rem;
 
+  //padding: 1.2rem;
   
   border-radius: 0.5rem;
 
