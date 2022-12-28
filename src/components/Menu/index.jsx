@@ -1,7 +1,8 @@
 import { Container, Main } from './styles';
 
 import { AiOutlineHeart } from 'react-icons/ai';
-import { AiOutlinePlus } from 'react-icons/ai';
+import { AiOutlinePlus, AiOutlineRight } from 'react-icons/ai';
+import { IoRemove } from 'react-icons/io5'
 
 
 import heartImg from '../../assets/heart.svg';
@@ -24,21 +25,28 @@ export function Menu({ img, title, description, price, ...rest}){
 
         <img src={img} alt="Imagem do prato" className='pratoImg'/>
 
-        <h2>{title}</h2>
-
-        <p>{description}</p>
+        <button>
+          {title} 
+          <AiOutlineRight
+            className='teste'
+            
+          />
+        </button>
+        
+        <h3>{description}</h3>
 
         <h1>R$ {price}</h1>
 
         <div className='add'>
           <button id='remove'>
-            <img src={subtractionImg} alt="botão para retirar uma unidade do prato, do carrinho de compras" />
+            <IoRemove
+              className='buttonRemove'
+            />
           </button>
           <p> 01 </p>
           <button id='increment'>
-           
            <AiOutlinePlus
-            color='white'
+            className='buttonAdd'
            />
           </button>
           

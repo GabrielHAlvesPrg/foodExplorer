@@ -49,6 +49,8 @@ export const Main = styled.div`
 
   margin-top: 6.2rem;
 
+  position: relative;
+
   h1 {
     font-family: var(--ff-secondary);
     font-weight: 500;
@@ -59,11 +61,58 @@ export const Main = styled.div`
     color: ${({theme}) => theme.COLORS.GRAY_400};
   }
 
+  .btnScrollLeft {
+    position: absolute;
+    width: 116px;
+    height: 448px;
+    left: 0px;
+    top: 90px;
+
+    border: none;
+
+    z-index: 1;
+
+    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+   
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .btnScrollRight{
+    position: absolute;
+    width: 116px;
+    height: 448px;
+    right: 0px;
+    top: 90px;
+
+    border: none;
+
+    z-index: 1;
+
+    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+   
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+  }
+
   .pratosPrincipais {
     display: flex;
 
     gap: 2.7rem;
 
     max-width: 112.0rem;
+
+    overflow: auto;
+  
+    ::-webkit-scrollbar {
+      background-color: #1d1d1d;
+      color: white;
+      width: 5px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #5b5b5b;
+      border-radius: 5px;
+    }
   }
 `;
