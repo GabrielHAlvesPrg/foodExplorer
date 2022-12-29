@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
- 
+  
 
 `;
 
@@ -61,12 +61,21 @@ export const Main = styled.div`
     color: ${({theme}) => theme.COLORS.GRAY_400};
   }
 
+  section {
+    position: relative;
+  }
+
   .btnScrollLeft {
     position: absolute;
-    width: 116px;
-    height: 448px;
+    width: 8.0rem;
+    height: 30.0rem;
     left: 0px;
     top: 90px;
+    
+    margin-top: 10.0rem;
+
+    border-top-left-radius: 1.0rem;
+    border-bottom-left-radius: 1.0rem;
 
     border: none;
 
@@ -75,44 +84,86 @@ export const Main = styled.div`
     background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
    
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    
   }
 
   .btnScrollRight{
     position: absolute;
-    width: 116px;
-    height: 448px;
+    width: 8.0rem;
+    height: 30.0rem;
     right: 0px;
     top: 90px;
+
+    margin-top: 10.0rem;
+
+    border-top-right-radius: 1.0rem;
+    border-bottom-right-radius: 1.0rem;
 
     border: none;
 
     z-index: 1;
 
-    background: linear-gradient(90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
+    background: linear-gradient(-90deg, rgba(0, 10, 15, 0.272541) 0%, #000A0F 100%);
    
     transform: matrix(-1, 0, 0, 1, 0, 0);
-
+ 
   }
 
-  .pratosPrincipais {
+  .pratos-principais, .sobremesas, .bebidas {
     display: flex;
 
-    gap: 2.7rem;
+   
 
     max-width: 112.0rem;
 
     overflow: auto;
   
     ::-webkit-scrollbar {
-      background-color: #1d1d1d;
-      color: white;
-      width: 5px;
-      border-top-right-radius: 5px;
-      border-top-left-radius: 5px;
+      display: none;
+      /*
+        background-color: #1d1d1d;
+        color: white;
+        width: 5px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      */
     }
     ::-webkit-scrollbar-thumb {
+      /*
       background-color: #5b5b5b;
       border-radius: 5px;
+      */
     }
   }
+
+  .lista-pratos {
+    display: flex;
+
+    gap: 2.7rem;
+
+    list-style: none;
+  }
+
+  section:last-child{
+    margin-bottom: 8.8rem;
+  }
+
+  .lista-sobremesa {
+    display: flex;
+
+    gap: 2.7rem;
+
+    list-style: none;
+  }
+
+  .lista-bebidas {
+    display: flex;
+
+    gap: 2.7rem;
+
+    list-style: none;
+  }
+
+
+
 `;

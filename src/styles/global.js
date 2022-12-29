@@ -5,6 +5,19 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    ::-webkit-scrollbar {     
+      background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+      color: white;
+      width: 10px;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+        
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${({theme}) => theme.COLORS.BACKGROUND_600};
+      border-radius: 5px; 
+    }
   }
 
   :root {
