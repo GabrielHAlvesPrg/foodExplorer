@@ -8,7 +8,8 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.div`
-  max-width: 136.8rem;
+  max-width: 136.6rem;
+  
 
   margin: 0 auto;
 
@@ -18,7 +19,7 @@ export const Main = styled.div`
 
   align-items: center;
 
-  padding: 24px 123px;
+  padding-top: 2.5rem;
   gap: 3.2rem;
 
 
@@ -46,9 +47,11 @@ export const Main = styled.div`
 
   > button {
     font-size: 1.4rem;
+    width: 500px;
   }
 
   > a {
     color: ${({theme}) => theme.COLORS.GRAY_400};
+    margin-top: .5rem;
   }
 `;

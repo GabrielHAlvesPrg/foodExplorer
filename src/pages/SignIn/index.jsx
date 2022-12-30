@@ -20,6 +20,7 @@ export function SignIn(){
           <Input
             placeholder="Exemplo: exemplo@exemplo.com.br"
             type="text"
+            border
           />
         </div>
 
@@ -28,6 +29,7 @@ export function SignIn(){
           <Input
             placeholder="No mínimo 6 caracteres"
             type="password"
+            border
           />
         </div>
          

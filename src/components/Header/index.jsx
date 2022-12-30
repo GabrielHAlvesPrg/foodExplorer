@@ -3,7 +3,7 @@ import { BsSearch } from 'react-icons/bs';
 
 import logoImg from '../../assets/Polygon.svg';
 import logoutImg from '../../assets/Logout.svg';
-import invoiceImg from '../../assets/invoice.svg';
+import invoiceIconImg from '../../assets/invoice.svg';
 
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
@@ -24,11 +24,14 @@ export function Header(){
           placeholder="Busque pelas opções de pratos"
           type="text"
           icon={BsSearch}
+          background
         />
 
-        <Button title="Meu pedido (0)">
+        <Button
+          title="Meu pedido (0)"
+          src={invoiceIconImg}
+        >
         
-        <img src={invoiceImg} alt="" />
         
         </Button>
 
