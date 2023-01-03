@@ -7,6 +7,7 @@ export default {
     BACKGROUND_500: "#00111A",
     BACKGROUND_400: "#0D1D25",
     
+    TABLE_BORDER: "#192227",
 
     WHITE: "#FFFFFF",
 

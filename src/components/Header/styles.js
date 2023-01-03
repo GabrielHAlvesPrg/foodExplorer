@@ -4,6 +4,9 @@ export const Container = styled.div`
   max-width: 100%;
   height: 10.4rem;  
 
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_500};
 `;
 
