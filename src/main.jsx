@@ -5,13 +5,13 @@ import GlobalStyles from './styles/global';
 
 import theme from './styles/theme';
 
-import { Requests } from './pages/Requests';
+import { EditionDish } from './pages/EditionDish';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-      <Requests />
+      <EditionDish />
     </ThemeProvider>
   </React.StrictMode>,
 )
