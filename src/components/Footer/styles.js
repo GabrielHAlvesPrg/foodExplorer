@@ -7,6 +7,13 @@ export const Container = styled.div`
   //position: absolute;
   //bottom: 0;
 
+  //está posicionando o elemento no final da página ----- (não deu certo)
+  //flex-shrink: 0;
+  //position: relative;
+  //bottom:0;
+  //left:0;
+  //-----------------------------------------------------
+
   padding: 2.3rem;
 
   background: ${({theme}) => theme.COLORS.BACKGROUND_500};

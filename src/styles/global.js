@@ -9,7 +9,7 @@ export default createGlobalStyle`
     ::-webkit-scrollbar {     
       background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
       color: white;
-      width: 10px;
+      width: 7px;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
         
@@ -59,6 +59,6 @@ export default createGlobalStyle`
   }
 
   button:hover, a:hover {
-    filter: brightness(0.9);
+    filter: brightness(1.2);
   }
 `;
