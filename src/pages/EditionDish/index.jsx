@@ -21,11 +21,15 @@ export function EditionDish(){
         <h1>Editar prato</h1>
 
         <section className='introduction'>
-          <button>Selecionar imagem</button>
+          <div className='btn-adicionar-imagem'>
+            <label>Imagem do prato</label>
+            <button>Selecionar imagem</button>
+          </div>
 
           <div className="input">
             <label className="label">Nome</label>
             <Input
+              className="teste"
               placeholder="Exemplo: Salada Caesar"
               type="text"
               border

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   
+  
   #btnComeBack{
     margin: 0 auto;
     max-width: 136.8rem;
@@ -31,9 +32,47 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.div`
-  width: 136.0rem;
+  max-width: 136.0rem;
 
   margin: 0 auto;
+
+  .btn-adicionar-imagem{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.8rem;
+
+    label {
+      margin-bottom: .8rem;
+    }
+    
+    button {
+      height: 5.0rem;
+      width: 22.9rem;
+      border: 1px solid #FFFFFF;
+      border-radius: 5px;
+      background: none;
+      color: ${({theme}) => theme.COLORS.WHITE};
+
+      transition: 100ms linear;
+    }
+
+    button:hover{
+      background-color: ${({theme}) => theme.COLORS.BACKGROUND_500};
+      transition: 100ms linear;
+    }
+  }
+
+  h1 {
+    margin-bottom: 3.2rem;
+    font-family: var(--ff-secondary);
+    font-weight: 500;
+    color: ${({theme}) => theme.COLORS.GRAY_400};
+  }
+
+  .teste {
+    width: 102.0rem;
+    //max-width: 1020px;
+  }
 
   .introduction{
     display: flex;
